@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff2e1;
+    background-color: #eeffff;
     margin: 0;
     padding: 20px;
     display: flex;
@@ -16,6 +16,9 @@ body {
 
 .products-section {
     flex: 2;
+}
+h2 {
+    border-bottom: solid 2px black;
 }
 .products-grid {
     display: grid;
@@ -35,7 +38,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0;
-    color: #333;
+    color: black;
 }
 .product-price {
     color: #28a745;
@@ -44,7 +47,7 @@ body {
     margin-bottom: 15px;
 }
 .btn-add {
-    background-color: #ab8440;
+    background-color: #00c1ef;
     color: white;
     border: none;
     padding: 10px;
@@ -54,24 +57,23 @@ body {
     margin-top: auto;
 }
 .btn-add:hover {
-    background-color: #a79277;
+    background-color: #00aae0;
 }
-
 
 .cart-section {
     flex: 1;
-    background: white;
+    background: #00aae0;
     padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05), 0 5px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 5px black;
     height: fit-content;
     top: 20px;
 }
 .cart-title {
     margin-top: 0;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid black;
     padding-bottom: 10px;
-    color: #333;
+    color: black;
 }
 .cart-items {
     list-style: none;
@@ -85,11 +87,11 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-
+    padding-right: 10px;
 }
 .cart-item-info {
     font-size: 15px;
-    color: #555;
+    color: #202020;
 }
 .btn-remove {
     background-color: #dc3545;
@@ -109,15 +111,23 @@ body {
     font-weight: bold;
     display: flex;
     justify-content: space-between;
-    border-top: 2px solid #eee;
-    border-bottom: 2px solid #eee;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     padding-top: 15px;
     padding-bottom: 15px;
-    color: #333;
+    color: black;
 }
 .empty-message {
-    color: #888;
+    color: #202020;
     font-style: italic;
     text-align: center;
     margin: 20px 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #c9d2d6;
+    border-radius: 10px;
 }
